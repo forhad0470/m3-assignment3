@@ -3,13 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey’s</title>
+    <title>Hockey’s Club</title>
+    <!-- tailwind and daisy ui -->
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- google font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- tailwind text color -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+<!-- css section -->
+
+<style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
 </head>
-<body>
-    <header></header>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./Images/3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./Images/4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
 
-    <main></main>
+    </header>
 
-    <footer></footer>
+    <main>
+
+        <hr class="banner-bottom-hr mx-auto mt-24 mb-8 w-[86.333333%] text-gray-700">
+
+        <!-- Club and rating section -->
+
+        <section class="container mx-auto">
+            <div class="club-content text-center  ">
+                <h2 class="club-content-title text-4xl font-extrabold text-[#131318] mb-6">Professional Hockeys Club</h2>
+                <p class="club-content-description w-[100%] mx-auto text-gray-800 font-medium">Hockey’s Club in 2019, one of the first professional hockey clubs. ... professional hockey club based in uttara, Dhaka.</p>
+            </div>
+            <hr class="banner-bottom-hr mx-auto mt-8 mb-12 w-[100%] text-gray-700">
+
+            <div class="club-rating-container mx-auto text-center flex justify-center px-8 ">
+                <div class="club-rating">
+                    <div class="radial-progress mb-8 text-[#ef4444] text-primary" style="--value:70;" role="progressbar">70%</div>
+                <h2 class="rating-title text-lg font-semibold mb-4">Prayer Facility</h2>
+                <p class="rating-description px-8 mb-12 text-gray-700 ">There are most facility of every ground.</p>
+                </div>
+
+                <div class="club-rating">
+                    <div class="radial-progress mb-8 text-[#e7a43f] text-primary" style="--value:95;" role="progressbar">95%</div>
+                <h2 class="rating-title text-lg font-semibold mb-4">Prayer Facility</h2>
+                <p class="rating-description px-8 mb-12 text-gray-700 ">There are most facility of every ground.</p>
+                </div>
+
+                <div class="club-rating">
+                    <div class="radial-progress mb-8 text-[#c236c2] text-primary" style="--value:88;" role="progressbar">88%</div>
+                <h2 class="rating-title text-lg font-semibold mb-4">Prayer Facility</h2>
+                <p class="rating-description px-8 mb-12 text-gray-700 ">There are most facility of every ground.</p>
+                </div>
+
+                <div class="club-rating">
+                    <div class="radial-progress mb-8 text-[#2f7e3c] text-primary" style="--value:70;" role="progressbar">70%</div>
+                <h2 class="rating-title text-lg font-semibold mb-4">Prayer Facility</h2>
+                <p class="rating-description px-8 mb-12 text-gray-700 ">There are most facility of every ground.</p>
+                </div>
+
+            </div>
+        </section>
+        <hr class="banner-bottom-hr mx-auto mt-8 mb-12 w-[86.33%] text-gray-700">
+
+        <!-- program section -->
+
+        <section class="program">
+            <div class="program-content text-center ">
+                <h2 class="program-content-title py-6 text-4xl font-extrabold text-[#131318]">
+                    Program Sections
+                </h2>
+                <p class="program-content-description w-[100%] mx-auto text-base font-medium mb-20">
+                    The Hockey Section actively promotes hockey in Hong Kong and runs programmes to introduce members' and non-members' children to the game from 6 years old
+                </p>
+            </div>
+            <div class="program-container grid grid-cols-2 gap-6 w-[75%] mx-auto items-center">
+                <div class="program-content">
+                    <img class=" relative " src="./Images/2.png" alt="">
+                    <h2 class="card-title absolute">Junior Program</h2>
+                </div>
+                <img src="./Images/3.png" alt="">
+                <img class="col-span-2" src="./Images/4.png" alt="">
+            </div>
+        </section>
+
+    </main>
+
+        
 </body>
 </html>
